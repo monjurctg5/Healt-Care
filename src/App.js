@@ -13,6 +13,9 @@ import Details from './Components/Details/Details';
 import Login from './Components/Login/Login';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+import Registration from './Components/Registration/Registration';
+import Service from './Components/Service/Service';
+import Services from './Components/Services/Services';
 
 
 function App() {
@@ -28,8 +31,15 @@ function App() {
           <PrivateRoute  path="/details/:id">
             <Details></Details>
           </PrivateRoute>
+          <PrivateRoute path = "/services">
+            <Services></Services>
+
+          </PrivateRoute>
           <Route path = "/login">
             <Login></Login>
+          </Route>
+          <Route path = "/register">
+            <Registration></Registration>
           </Route>
         </Switch>
       </Router>

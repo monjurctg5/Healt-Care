@@ -10,22 +10,30 @@ import {
 import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
 import Details from './Components/Details/Details';
+import Login from './Components/Login/Login';
+import AuthProvider from './context/AuthProvider';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 
 
 function App() {
   return (
     <div className = "App">
-      <Router>
+   <AuthProvider>
+   <Router>
         <Header></Header>
         <Switch>
           <Route exact path="/">
             <Home></Home>
           </Route>
-          <Route  path="/details/:id">
+          <PrivateRoute  path="/details/:id">
             <Details></Details>
+          </PrivateRoute>
+          <Route path = "/login">
+            <Login></Login>
           </Route>
         </Switch>
       </Router>
+   </AuthProvider>
  
     </div>
   );

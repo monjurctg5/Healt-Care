@@ -1,7 +1,11 @@
 import React from 'react';
 import {Link} from "react-router-dom"
+import useAuth from '../../hooks/useAuth';
 let logo = "https://www.almightycs.com/acs_webiste_extension/static/src/images/hms/appointment.png"
 const Header = () => {
+    const {user,Logout} = useAuth()
+    console.log(user.displayName);
+
     return (
         <div>
               <nav className="navbar shadow  navbar-expand-lg navbar-light bg-light">
@@ -12,16 +16,29 @@ const Header = () => {
             </button>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/login">Login</Link>
-                </li>
-                <li className="nav-item">
-                <Link className="nav-link " to="/register">Registration</Link>
-                </li>
+                {
+                    user.email?
+                   <>
+                         <li className="nav-item">
+                    <Link className="nav-link active" aria-current="page" to="/login" onClick = {Logout}>LogOut</Link>
+                    </li>
+                    <li className = "nav-item">
+                        <span className = "nav-link">{user.displayName}</span>
+                    </li>
+                   </>
+                    :
+                    <>
+                        <li className="nav-item">
+                        <Link className="nav-link active" aria-current="page" to="/login">Login</Link>
+                        </li>
+                        <li className="">
+                        <Link className="nav-link " to="/register">Registration</Link>
+                        </li>
+                    </>
+
+                }
+               
                 
-                <li className="nav-item">
-                <a className="nav-link disabled" href="/" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
             </ul>
         
             </div>

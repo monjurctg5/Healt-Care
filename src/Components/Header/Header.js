@@ -8,7 +8,7 @@ const Header = () => {
     return (
         <div>
               <nav className="navbar shadow  navbar-expand-lg navbar-dark bg-dark">
-        <div className="container">
+            <div className="container">
             <Link className="navbar-brand" to="/"><img src={logo} width="50px" height="50px" alt="" /></Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
@@ -18,11 +18,13 @@ const Header = () => {
                 {
                     user.email?
                    <>
+                     <li className="nav-item">
+                        <Link className="nav-link active" aria-current="page" to="/home">Home</Link>
+                        </li>
                       <li className="nav-item">
                         <Link className="nav-link active" aria-current="page" to="/services">All Services</Link>
                         </li>
-
-                    <li className="nav-item">
+                            <li className="nav-item">
                         <Link className="nav-link active" aria-current="page" to="/about">About</Link>
                         </li>
                         <li className="nav-item">
@@ -42,11 +44,11 @@ const Header = () => {
                    </>
                     :
                     <>
-                        <li className="nav-item">
-                        <Link className="nav-link active" aria-current="page" to="/login">Login</Link>
+                         <li className="nav-item">
+                        <Link className="nav-link active" aria-current="page" to="/home">Home</Link>
                         </li>
-                        <li className="">
-                        <Link className="nav-link active " to="/register">Registration</Link>
+                        <li className="nav-item">
+                        <Link className="nav-link active" aria-current="page" to="/services">All Services</Link>
                         </li>
                         <li className="nav-item">
                         <Link className="nav-link active" aria-current="page" to="/about">About</Link>
@@ -54,6 +56,16 @@ const Header = () => {
                         <li className="nav-item">
                         <Link className="nav-link active" aria-current="page" to="/contact">Contact</Link>
                         </li>
+                        <li className="nav-item">
+                        <Link className="nav-link active" aria-current="page" to="/doctors">Doctors</Link>
+                        </li>
+                        <li className="nav-item">
+                        <Link className="nav-link active" aria-current="page" to="/login">Login</Link>
+                        </li>
+                        <li className="">
+                        <Link className="nav-link active " to="/register">Registration</Link>
+                        </li>
+                        
                     </>
 
                 }

@@ -2,13 +2,13 @@ import React from 'react';
 
 const ContactPart = () => {
     return (
-        <div className = "container mt-5">
-            <h1 className="text-center fs-1 fw-bold text-white mt-5 mb-5">
+        <div className = "container text-white mt-5">
+            <h1 className="text-center fs-1 fw-bold text-dark mt-5 mb-5">
                 Contact Us
             </h1>
             <div className = "row row-cols-1 row-cols-md-2 g-4   ">
-        <div  className="col shadow-lg rounded ">
-           <div className="card">
+        <div  className="col  rounded ">
+           <div className="custom-card">
            <div className="icon"><i className="fas fa-phone-square-alt"></i></div>
             <h2 className="subtitle">By Phone</h2>
             <p className="">
@@ -24,7 +24,7 @@ const ContactPart = () => {
             </div>
 
             <div  className="col rounded   ">
-            <div className="card  ">
+            <div className="custom-card  ">
             <div className="icon"><i className="fas fa-video"></i></div>
             <h2 className="subtitle">Live Chat</h2>
             <p className="desc">

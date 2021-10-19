@@ -7,7 +7,13 @@
     height:500px;
     box-shadow: 6px 6px 10px rgb(18, 24, 23);
   }
-
+  .custom-card{
+      border:1px solid  ;
+      background-color: rgba(0,0,0,0.5);
+      border-radius: 10px;
+      border: 1px solid rgba(255,255,255,0.3);
+      box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+  }
 .subtitle {
     font-size: 20px;
     font-weight: 700;
@@ -16,6 +22,7 @@
     letter-spacing: .2em;
     max-width: 275px;
     margin-left: auto;
+    color: white;
     margin-right: auto;
     margin-bottom: 1rem;
 }
@@ -29,6 +36,7 @@
     border: 1px solid #D9D9D9;
     background: #fff;
     width: 50% !important;
+    background-color: rgba(0,0,0,0.5);
 }
 .Button a{
     text-decoration: none;
@@ -37,4 +45,23 @@
     transition: background .2s ease,border .2s ease;
     margin-top: 1rem;
     font-weight: 700;
+    color: white;
+    background-color: rgba(0,0,0,0.3);
+}
+.text-content{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 20px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+}
+
+.text-content:hover{
+    background-color: rgba(0, 0, 0, 0.425);
+    color: rgb(219, 231, 194);
+}
+@media(max-width:600px){
+    .text-content{
+        width: 100%;
+    }
 }

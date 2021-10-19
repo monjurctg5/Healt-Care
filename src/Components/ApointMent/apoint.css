@@ -1,0 +1,13 @@
+.success{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.success .icon{
+    font-size: 200px;
+    color: green;
+}

@@ -1,24 +1,24 @@
 import React from 'react';
 import './contact.css'
 import ContactPart from './ContactPart/ContactPart';
-let img = `https://thamza.react.themesdesign.in/static/media/img-3.dc2e6497.png`
+let img = `https://images.theconversation.com/files/59470/original/bmc3zndq-1411073854.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop `
 
 const Contact = () => {
     return (
-      <div>
-            <div className="bg-color  pt-5 pb-5 ">
+      <div className = "pb-3">
+        <div className = "">
+          <img src="https://images.everydayhealth.com/images/doctors-for-alzheimers-healthcare-team-722x406.jpg?sfvrsn=7ee06af2_10" height="400px" width="100%"  alt="" />
+        </div>
+            <div className="bg-color bg  pt-5 pb-5 ">
               <ContactPart/>
-              <div className="text-center text-white  w-50 mx-auto p-3 mt-5">
+              <div className="  text-content">
                 <h1>Send  a Message</h1>
-                <p>To askinng any question about Math point You Can send  a message  or call us  or you contact us with live</p>
+                <p>To askinng any question about Health Care You Can send  a message  or call us  or you contact us with live</p>
               </div>
 
             <div className = "container mt-5 pt-5">
-            <div className = "d-lg-flex ">
-               <div className="col-lg-6  pt-5">
-               <img src={img} alt="" />  
-               </div> 
-               <div className="bg">
+            <div className = "">
+               <div className="">
         <div className = "main">
         <div className = "register">
             <h2>Please Contact</h2>

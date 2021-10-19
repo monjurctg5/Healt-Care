@@ -22,7 +22,7 @@ const AboutUS = () => {
                     <p>We our provided all catagoires doctor and medicale service  with resonable  price  and the doctor of helth care  are very good   and also good person  </p>
                     </div>
 
-<h2 >Our Doctors</h2>
+<h2  >Our <span className = "text-info"> <br/>  Speacilist</span></h2>
 <div className="row">
   {
     doctors.map(doctor=>(

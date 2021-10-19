@@ -8,9 +8,9 @@ const Doctors = () => {
         .then(data=>setDoctors(data))
     },[])
     return (
-        <div className = "container mt-5 ">
+        <div className = "container ">
             <h3 className = "pb-2  text">Specialist <span className = "text-bold text-warning">Doctor</span> List</h3>
-            <div className ="row row-cols-12 row-cols-md-3 g-4 ">
+            <div className ="row cols-12 row-cols-sm-12 row-cols-md-3 g-4 ">
             {
                 doctors.map(doctor=>(
                     <div className="col ">

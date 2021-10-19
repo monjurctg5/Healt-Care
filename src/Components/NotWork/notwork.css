@@ -1,0 +1,20 @@
+.notWork{
+    height: 700px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.274);
+    text-align: center;
+}
+.gitnotWork .text{
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 200px;
+
+}
+.notWork.text h1{
+    color: goldenrod;
+    font-size: 200px;
+}
+.text .icon{
+    font-size: 100px;
+    color: rgb(177, 28, 28);
+}

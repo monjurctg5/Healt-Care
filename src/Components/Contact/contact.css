@@ -9,10 +9,10 @@
   }
   .custom-card{
       border:1px solid  ;
-      background-color: rgba(0,0,0,0.5);
+      background-color: rgba(0, 0, 0, 0.377);
       border-radius: 10px;
       border: 1px solid rgba(255,255,255,0.3);
-      box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+      box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.281);
   }
 .subtitle {
     font-size: 20px;
@@ -64,4 +64,12 @@
     .text-content{
         width: 100%;
     }
+}
+.contact-container{
+    background-color: rgba(92, 88, 88, 0.253);
+    
+
+}
+.contact-text {
+    color: rgba(8, 8, 8, 0.822);
 }

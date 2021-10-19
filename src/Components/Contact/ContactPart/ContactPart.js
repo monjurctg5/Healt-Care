@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactPart = () => {
     return (
-        <div className = "container text-white mt-5">
+        <div className = "container contact-text mt-5">
             <h1 className="text-center fs-1 fw-bold text-dark mt-5 mb-5">
                 Contact Us
             </h1>

@@ -9,7 +9,7 @@ const Contact = () => {
         <div className = "">
           <img src="https://images.everydayhealth.com/images/doctors-for-alzheimers-healthcare-team-722x406.jpg?sfvrsn=7ee06af2_10" height="400px" width="100%"  alt="" />
         </div>
-            <div className="bg-color bg  pt-5 pb-5 ">
+            <div className="  bg    pt-5 pb-5 ">
               <ContactPart/>
               <div className="  text-content">
                 <h1>Send  a Message</h1>

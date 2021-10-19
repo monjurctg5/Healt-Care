@@ -1,5 +1,4 @@
 import React, {  createContext } from 'react';
-import usePatientinfo from '../hooks/pinfo';
 import useFirebase from '../hooks/useFirebase';
 export const AuthContext = createContext()
 const AuthProvider = ({children}) => {

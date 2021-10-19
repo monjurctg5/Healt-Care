@@ -46,8 +46,6 @@ const AboutUS = () => {
                           }
                         </div>
                     </div>
-
-
         </div>
     );
 };

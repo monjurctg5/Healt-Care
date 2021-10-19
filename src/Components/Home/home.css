@@ -1,0 +1,16 @@
+.appointmentForm{
+
+    padding-top: 30px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.137);
+}
+.service-container{
+    background-color: rgba(0, 0, 0, 0.137);
+    box-shadow: 0,0,0,rgba(0, 0, 0, 0.253);
+
+}
+.doctor-containe{
+    background-color: rgba(0, 0, 0, 0.397) !important;
+    box-shadow: 0,0,0,rgba(0, 0, 0, 0.418);
+
+}

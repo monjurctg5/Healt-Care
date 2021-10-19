@@ -8,7 +8,7 @@
     {
         "name":"MOHAMMAD FAIZUL",
         "id":202,
-        "img":"https://media.istockphoto.com/photos/team-of-doctors-and-nurses-in-hospital-picture-id1307543618?b=1&k=20&m=1307543618&s=170667a&w=0&h=hXpYmNYXnhdD36C-8taPQvdpM9Oj-woEdge8nvPrsZY=",
+        "img":"https://media.istockphoto.com/photos/doctor-holding-digital-tablet-at-meeting-room-picture-id1189304032?k=20&m=1189304032&s=612x612&w=0&h=ovTNnR0JX2cRZkzMBed9exRO_PamZLlysLDFkXesr4Q=",
         "speacialist":"MEDECINE "
     },
     {
@@ -23,5 +23,19 @@
         "img":"https://d1ac9zce9817ms.cloudfront.net/images/how-to-immigrate-to-canada-as-a-doctor%20%281%29-1539078403238.jpg",
         "speacialist":"CARDIOLOGY "
     }
+    ,
+    {
+        "name":"wangdo",
+        "id":205,
+        "img":"https://media.istockphoto.com/photos/portrait-of-mature-male-doctor-wearing-white-coat-standing-in-picture-id1203995945?k=20&m=1203995945&s=612x612&w=0&h=g0_ioNezBqP0NXrR_36-A5NDHIR0nLabFFrAQVk4PhA=",
+        "speacialist":"CARDIOLOGY "
+    },
+    {
+        "name":"mis woganda",
+        "id":206,
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvSOvZlEko4kuvJh_w_jhGbD_Y9FlKXHsUDw&usqp=CAU",
+        "speacialist":"CARDIOLOGY "
+    }
+  
 
 ]

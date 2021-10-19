@@ -27,16 +27,40 @@
                     "description":"Computed tomography (CT) scan is a useful diagnostic tool for detecting diseases and injuries. It uses a series of X-rays and a computer to produce a 3D image of soft tissues and bones. CT is a painless, noninvasive way for your healthcare provider to diagnose"
                     },
                     {
-                        "id":105,"title":"ULTRASONOGRAPHY",
-                        "img":"https://i2.wp.com/parkview.com.bd/wp-content/uploads/2019/03/usg-ctg.jpg?fit=200%2C200&#038;ssl=1",
+                        "id":105,"title":"EEG",
+                        "img":"https://i1.wp.com/parkview.com.bd/wp-content/uploads/2019/03/eeg-test-ctg.jpg?fit=200%2C200&#038;ssl=1",
                         "sortDes":"Korean Samsung Machine",
                         "description":"Computed tomography (CT) scan is a useful diagnostic tool for detecting diseases and injuries. It uses a series of X-rays and a computer to produce a 3D image of soft tissues and bones. CT is a painless, noninvasive way for your healthcare provider to diagnose"
                         },
                         {
-                            "id":105,"title":"ULTRASONOGRAPHY",
+                            "id":106,"title":"ULTRASONOGRAPHY",
                             "img":"https://i2.wp.com/parkview.com.bd/wp-content/uploads/2019/03/usg-ctg.jpg?fit=200%2C200&#038;ssl=1",
                             "sortDes":"Korean Samsung Machine",
                             "description":"Computed tomography (CT) scan is a useful diagnostic tool for detecting diseases and injuries. It uses a series of X-rays and a computer to produce a 3D image of soft tissues and bones. CT is a painless, noninvasive way for your healthcare provider to diagnose"
                             }
+               ,
+               {
+                "id":107,"title":"BMD",
+                "img":"https://i1.wp.com/parkview.com.bd/wp-content/uploads/2019/03/bmd-test-ctg.jpg?fit=200%2C200&#038;ssl=1",
+                "sortDes":"American GE Machine",
+                "description":"Computed tomography (CT) scan is a useful diagnostic tool for detecting diseases and injuries. It uses a series of X-rays and a computer to produce a 3D image of soft tissues and bones. CT is a painless, noninvasive way for your healthcare provider to diagnose"
+                }
+                ,
+                {
+                    "id":108,"title":"ETT",
+                    "img":"https://i1.wp.com/parkview.com.bd/wp-content/uploads/2019/03/ett-ctg.jpg?fit=200%2C200&#038;ssl=1",
+                    "sortDes":"Phillips Cardio Tract Machine",
+                    "description":"Computed tomography (CT) scan is a useful diagnostic tool for detecting diseases and injuries. It uses a series of X-rays and a computer to produce a 3D image of soft tissues and bones. CT is a painless, noninvasive way for your healthcare provider to diagnose"
+                    }
+                    ,
+                    {
+                        "id":109,"title":"ESWL",
+                        "img":"https://i1.wp.com/parkview.com.bd/wp-content/uploads/2019/03/eswl-ctg.jpg?fit=200%2C200&#038;ssl=1",
+                        "sortDes":"Treatment for kidney stones",
+                        "description":"Computed tomography (CT) scan is a useful diagnostic tool for detecting diseases and injuries. It uses a series of X-rays and a computer to produce a 3D image of soft tissues and bones. CT is a painless, noninvasive way for your healthcare provider to diagnose"
+                        }
+
+
+
 
     ]

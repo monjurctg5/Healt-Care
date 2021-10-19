@@ -32,7 +32,9 @@ const Header = () => {
                         <Link className="nav-link active" aria-current="page" to="/doctors">Doctors</Link>
                         </li>
                       
-                    { user?.email?
+                    {
+                        //if user  login 
+                     user?.email?
                     <>
                     <li className="nav-item">
                                         <Link className="nav-link active" aria-current="page" to="/login" onClick = {Logout}>LogOut</Link>
@@ -45,6 +47,7 @@ const Header = () => {
                                         </li>      
                     </>    
                     :
+                        // when user not login
                     <>
                         <li className="nav-item">
                         <Link className="nav-link active" aria-current="page" to="/login">Login</Link>
@@ -53,7 +56,8 @@ const Header = () => {
                         <Link className="nav-link active " to="/register">Registration</Link>
                         </li>
                         
-                    </>}
+                    </>
+                    }
 
 
               

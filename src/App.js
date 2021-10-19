@@ -42,9 +42,9 @@ function App() {
           <Route path="/about">
             <AboutUS></AboutUS>
           </Route>
-          <Route path="/contact">
+          <PrivateRoute path="/contact">
             <Contact></Contact>
-          </Route>
+          </PrivateRoute>
           <Route path="/showAppoint">
             <ShowApoin></ShowApoin>
           </Route>

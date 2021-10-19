@@ -7,10 +7,10 @@ import './reg.css'
 const glogo = "https://thumbs.dreamstime.com/b/snapdeal-logo-189257116.jpg"
 
 
-
+// Registration page 
 const Registration = (props) => {
     const {register,setUser,setFname,signInWithGoogle,updateName} = useAuth()
-
+ //Register information
     const [email,setEmail] = useState("")
     const [password ,setPassword] = useState("")
     const location = useLocation()
@@ -22,11 +22,7 @@ const Registration = (props) => {
         e.preventDefault()
         setFname(e.target.value)
     }
-    // const handleLastNamee = e=>{
-    //     e.preventDefault()
-    //     setLname(e.target.value)
 
-    // }
     const handleEmail = e=>{
         setEmail(e.target.value)
 
@@ -43,6 +39,7 @@ const Registration = (props) => {
             alert(error.message)
         })
     }
+    //manulay submit
     const handleSubmit = (e)=>{
         e.preventDefault()
         register(email,password)
@@ -55,6 +52,7 @@ const Registration = (props) => {
             alert(error.message)
         })
     }
+    
     return (
         <div className="bg">
         <div className = "main">

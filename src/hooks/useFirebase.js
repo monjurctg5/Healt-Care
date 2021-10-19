@@ -55,7 +55,8 @@ const useFirebase = ()=>{
     const updateName = ()=>{
         
         updateProfile(auth.currentUser,{
-            displayName:fname 
+            displayName:fname ,
+            photoURL :"https://cdn1.vectorstock.com/i/1000x1000/19/45/user-avatar-icon-sign-symbol-vector-4001945.jpg"
         })
 
     }

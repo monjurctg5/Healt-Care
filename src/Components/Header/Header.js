@@ -6,7 +6,7 @@ const Header = () => {
     const {user,Logout} = useAuth()
    
     return (
-        <div>
+            <div>
               <nav className="navbar shadow  navbar-expand-lg navbar-dark bg-dark">
             <div className="container">
             <Link className="navbar-brand" to="/"><img src={logo} width="50px" height="50px" alt="" /></Link>
@@ -15,9 +15,6 @@ const Header = () => {
             </button>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-                {
-                    user.email?
-                   <>
                      <li className="nav-item">
                         <Link className="nav-link active" aria-current="page" to="/home">Home</Link>
                         </li>
@@ -34,31 +31,21 @@ const Header = () => {
                         <li className="nav-item">
                         <Link className="nav-link active" aria-current="page" to="/doctors">Doctors</Link>
                         </li>
-                         <li className="nav-item">
-                    <Link className="nav-link active" aria-current="page" to="/login" onClick = {Logout}>LogOut</Link>
-                    </li>
-                    <li className = "nav-item">
-                        <span className = "nav-link">{user.displayName}</span>
-                    </li>    
-                       
-                   </>
+                      
+                    { user?.email?
+                    <>
+                    <li className="nav-item">
+                                        <Link className="nav-link active" aria-current="page" to="/login" onClick = {Logout}>LogOut</Link>
+                                        </li>
+                                        <li className = "nav-item">
+                                            <span className = "nav-link text-info">{user?.displayName}</span>
+                                        </li>
+                                        <li className = "nav-item">
+                                            <span className = "nav-link"><img src={user?.photoURL} className = "rounded-pill" width = "30px" alt="" /></span>
+                                        </li>      
+                    </>    
                     :
                     <>
-                         <li className="nav-item">
-                        <Link className="nav-link active" aria-current="page" to="/home">Home</Link>
-                        </li>
-                        <li className="nav-item">
-                        <Link className="nav-link active" aria-current="page" to="/services">All Services</Link>
-                        </li>
-                        <li className="nav-item">
-                        <Link className="nav-link active" aria-current="page" to="/about">About</Link>
-                        </li>
-                        <li className="nav-item">
-                        <Link className="nav-link active" aria-current="page" to="/contact">Contact</Link>
-                        </li>
-                        <li className="nav-item">
-                        <Link className="nav-link active" aria-current="page" to="/doctors">Doctors</Link>
-                        </li>
                         <li className="nav-item">
                         <Link className="nav-link active" aria-current="page" to="/login">Login</Link>
                         </li>
@@ -66,10 +53,10 @@ const Header = () => {
                         <Link className="nav-link active " to="/register">Registration</Link>
                         </li>
                         
-                    </>
+                    </>}
 
-                }
-               
+
+              
                 
             </ul>
         

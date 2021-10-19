@@ -1,3 +1,5 @@
+//import all important method from firebase
+
 import { getAuth,
      signInWithPopup,
       GoogleAuthProvider,
@@ -7,9 +9,11 @@ import { getAuth,
       signOut,
       updateProfile
     } from "firebase/auth";
+
 import { useEffect, useState } from "react";
 import initializeAuthentication from "../firebaseConfig/firebaseConfig";
-
+ 
+//firebase initialize
 initializeAuthentication()
 const  auth = getAuth()
 const googleProvider = new GoogleAuthProvider()
@@ -18,10 +22,13 @@ const useFirebase = ()=>{
     const [user,setUser] = useState({})
    
     const [fname,setFname] = useState("")
+    //for google signin
     const signInWithGoogle = ()=>{
         setIsLoading(true)
        return  signInWithPopup(auth,googleProvider)
     }
+
+    //for manulay register
 
     const register = (email,password)=>{
         return createUserWithEmailAndPassword(auth,email,password)
@@ -29,10 +36,12 @@ const useFirebase = ()=>{
     }
 
    
+    //manulay sign in
     const signIn = (email,password)=>{
         return signInWithEmailAndPassword(auth,email,password)
 
     }
+    // to logout
     const Logout =()=>{
         signOut(auth).then(()=>{
             setUser({})
@@ -40,6 +49,7 @@ const useFirebase = ()=>{
             setIsLoading(false)
         })
     }
+    //when user state change
     useEffect(()=>{
         const unsubscribe = onAuthStateChanged(auth,user=>{
             if(user){
@@ -52,6 +62,7 @@ const useFirebase = ()=>{
         })
         return ()=> unsubscribe
     },[])
+    //to update user info
     const updateName = ()=>{
         
         updateProfile(auth.currentUser,{
@@ -61,7 +72,7 @@ const useFirebase = ()=>{
 
     }
     
-
+//return all needed method to user some where
     return {
         user,
         signInWithGoogle,

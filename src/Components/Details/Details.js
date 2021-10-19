@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
+import { Link } from 'react-router-dom';
 import "./details.css"
 const Details = () => {
     const [serviceDetails,setServiceDetails] = useState([])
@@ -19,6 +20,10 @@ const Details = () => {
                     <h4>{Details?.title}</h4>
                     <h6 className = "text-danger">{Details?.sortDes}</h6>
                     <p>{Details?.description}</p>
+                    <Link to = "/apointment">
+                    <button  className="btn btn-danger"> Apoint Now</button>
+                    </Link>
+     
                 </div>
                 <div className="col">
                      <img src={Details?.img} width="100%"  alt="" />

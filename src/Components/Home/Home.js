@@ -1,4 +1,5 @@
 import React from 'react';
+import Doctors from '../Doctors/Doctors';
 import QuickLinks from '../QuickLinks/QuickLinks';
 import Services from '../Services/Services';
 
@@ -9,7 +10,12 @@ const Home = () => {
              <img src={banner} alt=""  height="500px"  width="100%"/>
             <div>
                 <QuickLinks></QuickLinks>
+                <h1 className = "mt-5 pb-3">Our Top <span className = "text-warning">Services</span></h1>
                 <Services></Services>
+               <div className = "bg-dark text-white pt-3 pb-3">
+               <Doctors></Doctors>
+               </div>
+               
             </div>
         </div>
     );

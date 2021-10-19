@@ -24,12 +24,12 @@ const Contact = () => {
             <h2>Please Contact</h2>
         <form action="" id="register" >
            
-            <input type="text" name="fname" id="fname" placeholder = "Enter your  Name" /  > <br /><br />
+            <input  className = "text-center" type="text" name="fname" id="fname" placeholder = "Enter your  Name" /  > <br /><br />
          
-            <input  required type="email" name="email" id="email" placeholder = "Enter your Email" /> <br /><br />
+            <input   className = "text-center" required type="email" name="email" id="email" placeholder = "Enter your Email" /> <br /><br />
            
            
-            <textarea placeholder = "write your message" name="" id="" cols="23" rows="5"></textarea>
+            <textarea placeholder = "write your message" className = "text-center" name="" id="" cols="26" rows="5"></textarea>
         
             <input type="submit" value = "Send" name="submit" id="submit"  /> <br /><br />
 

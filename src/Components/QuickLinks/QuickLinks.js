@@ -25,7 +25,7 @@ const QuickLinks = () => {
 
                 <div className="col   p-4  text-white">
                     <div className = "d-flex flex-column justify-content-center align-items-center ">
-                 <Link to="/" className = "text-white">
+                 <Link to="/apointment" className = "text-white">
                     <i className="fas fa-blender-phone fs-2 fw-bold"></i>
                     <h6 className = "mt-4">Request An Appiontment</h6>
                  </Link>

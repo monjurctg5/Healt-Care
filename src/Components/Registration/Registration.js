@@ -1,28 +1,32 @@
 import React, { useState } from 'react';
+import { getAuth, updateProfile } from "firebase/auth";
 import { useHistory, useLocation } from 'react-router';
 import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import './reg.css'
 const glogo = "https://thumbs.dreamstime.com/b/snapdeal-logo-189257116.jpg"
+
+
+
 const Registration = (props) => {
-    const {register,setUser} = useAuth()
-    const [fname,setFname] = useState()
-    const [lname,setLname] = useState()
-    const [email,setEmail] = useState()
-    const [password ,setPassword] = useState()
+    const {register,setUser,setFname,signInWithGoogle,updateName} = useAuth()
+
+    const [email,setEmail] = useState("")
+    const [password ,setPassword] = useState("")
     const location = useLocation()
     const history = useHistory()
+
     const redirect_url = location?.state?.from || "/"
-    const {signInWithGoogle} = useAuth()
+ 
     const  handleFirstName = e=>{
         e.preventDefault()
         setFname(e.target.value)
     }
-    const handleLastNamee = e=>{
-        e.preventDefault()
-        setLname(e.target.value)
+    // const handleLastNamee = e=>{
+    //     e.preventDefault()
+    //     setLname(e.target.value)
 
-    }
+    // }
     const handleEmail = e=>{
         setEmail(e.target.value)
 
@@ -30,34 +34,36 @@ const Registration = (props) => {
     const handlePassword =e =>{
         setPassword(e.target.value)
     }
-
-   
-
     const handleSigninWithGoogle = ()=>{
         signInWithGoogle()
         .then(res=>{
             setUser(res.user)
             history.push(redirect_url)
+        }).catch(error=>{
+            alert(error.message)
         })
     }
     const handleSubmit = (e)=>{
         e.preventDefault()
         register(email,password)
         .then(res=>{
+            alert("You Are Successfully Registerd \n Please Login ")
+            history.push("/login") 
             setUser({})
-            history.push("/login")   
+            updateName()
+        }).catch(error=>{
+            alert(error.message)
         })
     }
-
     return (
         <div className="bg">
         <div className = "main">
         <div className = "register">
-            <h2>Please {props.isLogin ? 'Lgin':'Register'}</h2>
+            <h2>Please Register</h2>
         <form action="" id="register" onSubmit={handleSubmit} >
            
             <input onBlur = {handleFirstName} type="text" name="fname" id="fname" placeholder = "Enter your First Name" /  > <br /><br />
-            <input onBlur = {handleLastNamee} type="text" name="fname" id="lname" placeholder = "Enter your Last Name" /> <br /><br />
+            <input  type="text" name="fname" id="lname" placeholder = "Enter your Last Name" /> <br /><br />
           
             <input onBlur = {handleEmail} required type="email" name="email" id="email" placeholder = "Enter your Email" /> <br /><br />
            

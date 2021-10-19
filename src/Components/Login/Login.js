@@ -10,7 +10,7 @@ const Login = (props) => {
     const location = useLocation()
     const history = useHistory()
     const redirect_url = location?.state?.from || "/"
-    const {signInWithGoogle,signIn,setUser} = useAuth()
+    const {signInWithGoogle,signIn,setUser,setIsLoading} = useAuth()
     const handleEmail = e=>{
         e.preventDefault()
         setEmail(e.target.value)
@@ -20,20 +20,26 @@ const Login = (props) => {
         setPassword(e.target.value)
     }
     const handleManulaySignIn = (e)=>{
+
         e.preventDefault()
+        setIsLoading(false)
         signIn(email,password)
         .then(result=>{
             setUser(result.user)
             history.push(redirect_url)
-           
+        }).catch(error=>{
+            alert(error.message)
         })
 
     }
     const handleGoogleSignIn = ()=>{
+        setIsLoading(false)
         signInWithGoogle()
         .then(result=>{
             console.log(redirect_url)
             history.push(redirect_url)
+        }).catch(error=>{
+            alert(error.message)
         })
     }
     return (

@@ -1,0 +1,40 @@
+.icon{
+    color: gold;
+    font-size: 40px;
+}
+.from-container{
+    border: 1px solid white;
+    height:500px;
+    box-shadow: 6px 6px 10px rgb(18, 24, 23);
+  }
+
+.subtitle {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    max-width: 275px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+.Button {
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1.19rem 1.37rem;
+    min-width: 170px;
+    font-size: 15px;
+    border: 1px solid #D9D9D9;
+    background: #fff;
+    width: 50% !important;
+}
+.Button a{
+    text-decoration: none;
+    color: #000;
+    letter-spacing: .1em;
+    transition: background .2s ease,border .2s ease;
+    margin-top: 1rem;
+    font-weight: 700;
+}

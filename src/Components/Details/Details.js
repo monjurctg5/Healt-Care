@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
+import "./details.css"
 const Details = () => {
     const [serviceDetails,setServiceDetails] = useState([])
     const {id} = useParams()
@@ -12,10 +13,12 @@ const Details = () => {
     const Details=serviceDetails?.find(details=>details?.id==id)
     console.log(Details);
     return (
-        <div>
+        <div className ="container details  pb-5 pt-5">
              <div className="row row-cols-md-2">
-                <div className="col">
+                <div className="col mt-5 pt-5">
                     <h4>{Details?.title}</h4>
+                    <h6 className = "text-danger">{Details?.sortDes}</h6>
+                    <p>{Details?.description}</p>
                 </div>
                 <div className="col">
                      <img src={Details?.img} width="100%"  alt="" />

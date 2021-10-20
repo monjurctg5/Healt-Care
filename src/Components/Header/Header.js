@@ -40,7 +40,7 @@ const Header = () => {
                                         <Link className="nav-link active" aria-current="page" to="/login" onClick = {Logout}>LogOut</Link>
                                         </li>
                                         <li className = "nav-item">
-                                            <span className = "nav-link text-info">{user?.displayName.slice(0,10)}</span>
+                                            <span className = "nav-link text-info">{user?.displayName}</span>
                                         </li>
                                         <li className = "nav-item">
                                             <span className = "nav-link"><img src={user?.photoURL} className = "rounded-pill" width = "30px" alt="" /></span>

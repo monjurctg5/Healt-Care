@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import QuickLinks from '../QuickLinks/QuickLinks';
+
 import "./doctors.css"
 const Doctors = () => {
     const [doctors,setDoctors] = useState([])
@@ -14,7 +14,9 @@ const Doctors = () => {
             <div className ="row cols-12 row-cols-sm-12 row-cols-md-3 g-4 ">
             {
                 doctors.map(doctor=>(
+                
                     <div className="col text-dark ">
+                        
                         <div className="card "  style={{width: "20rem"}}>
                             <img src={doctor.img}
                              className="card-img-top" height = "200px" alt="..."/>
@@ -26,11 +28,8 @@ const Doctors = () => {
                     </div>
                 ))
             }
-            
-
             </div>
            <div className = "mt-5">
-           <QuickLinks></QuickLinks>
            </div>
         </div>
     );

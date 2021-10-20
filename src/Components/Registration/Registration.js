@@ -44,10 +44,13 @@ const Registration = (props) => {
         e.preventDefault()
         register(email,password)
         .then(res=>{
+      
             alert("You Are Successfully Registerd \n Please Login ")
             history.push("/login") 
-            setUser({})
             updateName()
+
+            setUser({})
+            
         }).catch(error=>{
             alert(error.message)
         })

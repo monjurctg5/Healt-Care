@@ -19,8 +19,6 @@ const Home = () => {
                 <Services></Services>
 
                 </div>
-               
-
                <div className = "doctor-containe text-white pt-3 pb-3">
                <Doctors></Doctors>
                </div>

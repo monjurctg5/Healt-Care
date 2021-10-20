@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
+import QuickLinks from '../QuickLinks/QuickLinks';
 import './about.css'
 
 
@@ -46,6 +47,7 @@ const AboutUS = () => {
                           }
                         </div>
                     </div>
+                    <QuickLinks></QuickLinks>
         </div>
     );
 };
